@@ -28,7 +28,7 @@ def HandleSubstituicao(configInstance):
     return processor.Process()
 
 try:
-    config = Configuration("config.xml", sys.argv) 
+    config = Configuration("config_chefesdegabinete.xml", sys.argv) 
     Log.Log("Searching Nomeacoes")
     messages = HandleNomeacao(config)
     Log.Log("Searching Exoneracoes")

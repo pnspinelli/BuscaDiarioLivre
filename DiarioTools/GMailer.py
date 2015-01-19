@@ -22,7 +22,7 @@ class GMailerWrappper(object):
 			mailer.SetProxies(proxies)			
 		
 		mailer.SetLoginInfo(self.config.username, self.config.password)
-		mailer.SendEmail(self.config.destination, self.config.subject.encode("utf-8"), message)
+		mailer.SendEmail(self.config.destination, self.config.subject.encode("utf-8"), self.config.header + "\r\n" + message + "\r\n" + self.config.footer)
 	
 class GMailer:
 	"""Sends e-mail through gmail. Set login info, proxy if necessary and 
