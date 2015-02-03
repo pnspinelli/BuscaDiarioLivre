@@ -1,5 +1,4 @@
 <Config>    
-    <Subject>LabProdam Mailer Robot - Atualizações - Prodam</Subject>
-    <LogName>Prodam.log</LogName>
+    <Subject>LabProdam Mailer Robot - Atualizações - Prodam</Subject>   
     <LogMode>Overwrite</LogMode> <!-- Overwrite / Append --> 
 </Config>
